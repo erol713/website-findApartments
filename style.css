@@ -4,12 +4,14 @@ body{
 		background: #000;
 	}
 	#tekst{
-		color: #7D0593;
+		color: #2B0437;
 		text-align: center;
 		font-size: 40px;
 		position: absolute;
 		left: 30%;
 		font-weight: bold;
+		font-family: "Oswald", sans-serif;
+
 	}
 	#krug{
 		height: 185px;
@@ -24,7 +26,7 @@ body{
 	}
 	#logo{
 		position: absolute;
-		top: 40%;
+		top: 30%;
 		right: 45%;
 		
 
@@ -33,7 +35,7 @@ body{
 
 	#ap1 {
     transform: rotate(-20deg) ;
-    animation: mymove 5s infinite;
+    animation: mymove 2s infinite;
     position: relative;
     top: 20px;
     animation-delay: 2s;
@@ -42,19 +44,20 @@ body{
 
 	#ap2 {
     	position:relative;
-    	animation: mymove 5s infinite;
-        left:-20px;
-        animation-delay: 3s;
+    	animation: mymove 2.3s infinite;
+        left:-25px;
+        top: 19px;
+        animation-delay: 2s;
 
 	    
 	}
 
 	#ap3 {
     transform: rotate(20deg);
-    animation: mymove 6s infinite;
-    left:-40px;
+    animation: mymove 2.4s infinite;
+    left:-45px;
     position: relative;
-    top: 20px;
+    top: 35px;
     animation-delay: 2s;
     
 
@@ -75,18 +78,76 @@ body{
 	    50% {transform: translateY(75px);}
 	}
 
-	#menu_logo img{
-		width: 120px;
-		height: 80px;
-		float: right;
-		margin-top: 10px;
-		margin-right: 10px;
-		
-	}
 
+	.btn{
+	border-radius: 9px;
+	font-family: "Oswald", sans-serif;
+	color:#2B0437;
+	font-size: 135%;
+	text-decoration: none;
+	padding: 10px 20px;
+	border:solid #2B0437 3px;
+	text-transform: uppercase;
+
+}
+
+	.btn:hover{
+	color:#fff;
+	border: solid #fff 3px;
+}
+
+
+	#btn_meni{
+		position: absolute;
+		top: 90%;
+		right: 43%;
+}
+
+/*meni*/
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #2B0437; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover{
+    color: #f1f1f1;
+    border-bottom: 4px solid #000;
+	padding-bottom: 5px;
 	
+	
+}
 
-	#menu_logo{
-		height: 120px;
-		border-bottom: 2px solid #730375;
-	}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+
+}
+
+.closebtn:hover{
+
+	border:none !important;
+}
+
+#main {
+    transition: margin-left .5s;
+    
+}
