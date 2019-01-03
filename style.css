@@ -2,6 +2,7 @@ body{
 		margin: 0;
 		padding: 0;
 		background: #000;
+		font-family: "Oswald", sans-serif;
 
 
 
@@ -153,9 +154,11 @@ body{
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    
+
 }
 
-.sidenav a {
+.sidenav form {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -175,14 +178,17 @@ body{
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 36px;
+    font-size: 30px;
     margin-left: 50px;
+    color: #fff;
 
 }
 
 .closebtn:hover{
 
 	border:none !important;
+    font-size: 36px;
+
 }
 
 #main {
@@ -286,15 +292,27 @@ body{
   color: white;
 }
 
-
+input[type=submit] {
+    padding:5px 15px; 
+    background:#fff; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
 
 
 
 @media(max-width: 768px){
+	nav,
+	nav a,
+	nav li,
 	#logo{
 		position: absolute;
 		top: 30%;
 		right: 30%;
+		float:none;
+		
 	}
 
 	#btn_meni {
