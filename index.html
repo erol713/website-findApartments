@@ -19,96 +19,101 @@
 
 	<div id="mySidenav" class="sidenav">
 	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	    <form>
-		  Enter your search deatails:<br><br>
-		  Price from: <input type="number" name="price1"><br>
-		  To: <input type="number" name="price2"><br><br>
+	    <form action="rezultati.php" method="post"> 
+		  <span id="naslov"> Enter your search details:</span><br><br>
+		  Price from:<br>
+		  <input type="number" value = "price_1" name="price1"><br><br>
+		  To:<br>
+		  <input type="number" value = "price_2" name="price2"><br><br>
 
 		  Size:<br>
-		  <input type="number" name="size"><br><br>
+		  <input type="number" value = "size_of" name="size"><br><br>
 		  Location:<br>
-		  	<select name="Lokacija">
-			  <option value="volvo">Sarajevo-Centar</option>
-			  <option value="saab">Stari Grad</option>
-			  <option value="fiat">Novo Sarajevo</option>
-			  <option value="audi">Ilidza</option>
-			  <option value="volvo">Hadzici</option>
-			  <option value="saab">Vogosca</option>
-			  <option value="fiat">Novi Grad</option>
-			  <option value="audi">Ilijas</option>
-			  <option value="audi">Trnovo</option>
+		  	<select name="location">
+			  <option value="centar">Sarajevo-Centar</option>
+			  <option value="sg">Stari Grad</option>
+			  <option value="ns">Novo Sarajevo</option>
+			  <option value="ildz">Ilidza</option>
+			  <option value="hadz">Hadzici</option>
+			  <option value="vog">Vogosca</option>
+			  <option value="ng">Novi Grad</option>
+			  <option value="ili">Ilijas</option>
+			  <option value="trn">Trnovo</option>
 
-			</select><br><br>
+			</select><br><br><br>
 
-			<input type="submit" value="Submit">
+			<input type="submit" value="Find">
 		</form>
 	</div>
-
-	<nav>
-		<ul>
-		
-			 <li class="current no-border"> <a href="index.html" "> Home </a> </li>
-			 <li> <a href="about.html"> About us </a> </li>
-			 <li> <div class ="dropdown"> 
-			 <button class ="dropbtn">Services</button>
-						<div class="dropdown-content">
-						 <a href="services.html"> 	Charter 			</a>
-						 <a href="services.html">	Yacht Management 	</a>
-						 <a href="services.html">	Charter Management 	</a>
-						 <a href="services.html">	Yacht Brokerage   	</a>
-						  
-						</div>
-			<li> <div class="dropdown">
-	    	<button class="dropbtn">Destinations</button> 
-				<div class="dropdown-content">
-					<a href="destinations-croatia.html">	Croatia		</a>
-					<a href="destinations.html">	France		</a>
-					<a href="destinations.html">	Greece 		</a>
-					<a href="destinations.html">	Italy		</a>
-					<a href="destinations.html">	Turkey 		</a>
-			</li>
-
-		</ul>
-	</nav>
 	
-
-	<div id="main">
-
-
-		<div id="logo">
-			<i id="ap1"; class=" far fa-building fa-5x" style="color:#8728C7;"></i>
-			<i id="ap2"; class="fas fa-building fa-5x" style="color:#8728C7;"></i>
-			<i id="ap3"; class="far fa-building fa-5x" style="color:#8728C7;"></i>
-			<div id="cont"  class="animated rotateInUpRight ">
-				<span id="krug"></span>
-			</div>
-			<p id="tekst" class="animated fadeInRight delay-1s">Apartments Sarajevo</p>
+	<div id="slika">
+		<nav>
+			<ul>
 			
+				 <li class="current no-border"> <a href="index.html" "> Home </a> </li>
+				 <li> <a href="about.html"> About us </a> </li>
+				 <li> <div class ="dropdown"> 
+				 <button class ="dropbtn">Prices</button>
+							<div class="dropdown-content">
+							 <a href="services.html"> 	Up to 100.000 KM			</a>
+							 <a href="services.html">	100.000 - 200.000 KM 	</a>
+							 <a href="services.html">	Up to 300.000 KM	</a>
+							 <a href="services.html">	Over 300.000 KM   	</a>
+							  
+							</div>
+				<li> <div class="dropdown">
+		    	<button class="dropbtn">Locations</button> 
+					<div class="dropdown-content">
+						<a href="destinations-croatia.html">	Sarajevo		</a>
+						<a href="destinations.html">	France		</a>
+						<a href="destinations.html">	Greece 		</a>
+						<a href="destinations.html">	Italy		</a>
+						<a href="destinations.html">	Turkey 		</a>
+				</li>
 
-		</div>
-
-		<div class="social-media" >
-
-				<a href="https://www.facebook.com" class="fa fa-facebook"></a><br>
-				<a href="https://twitter.com" class="fa fa-twitter"></a><br>
-				<a href="https://plus.google.com" class="fa fa-google"></a><br>
-				<a href="https://www.youtube.com" class="fa fa-youtube"></a><br>
-				<a href="https://www.pinterest.com" class="fa fa-pinterest"></a><br>
-							
-		</div>
-
-		<div id="btn_meni">
-
-			<a class="btn" onclick="openNav()" >Find Apartments</a>
-		</div>
+			</ul>
+		</nav>
+	
+		<div id="main">
 		
+		
+
+			<div id="logo">
+				<i id="ap1"; class=" far fa-building fa-4x" style="color:#fff;"></i>
+				<i id="ap2"; class="fas fa-building fa-4x" style="color:#fff;"></i>
+				<i id="ap3"; class="far fa-building fa-4x" style="color:#fff;"></i>
+				<div id="cont"  class="animated rotateInUpRight ">
+					<span id="krug"></span>
+				</div>
+				<p id="tekst" class="animated fadeInRight delay-1s">Apartments Sarajevo</p>
+				
+
+			</div>
+		
+
+			<div class="social-media" >
+
+					<a href="https://www.facebook.com" class="fa fa-facebook"></a><br>
+					<a href="https://twitter.com" class="fa fa-twitter"></a><br>
+					<a href="https://plus.google.com" class="fa fa-google"></a><br>
+					<a href="https://www.youtube.com" class="fa fa-youtube"></a><br>
+					<a href="https://www.pinterest.com" class="fa fa-pinterest"></a><br>
+								
+			</div>
+
+			<div id="btn_meni">
+
+				<a class="btn" onclick="openNav()" >Find Apartments</a>
+			</div>
+			
+		</div>
 	</div>
 
 	<script type="text/javascript">
 
 		function openNav() {
-		    document.getElementById("mySidenav").style.width = "250px";
-		    document.getElementById("main").style.marginLeft = "250px";
+		    document.getElementById("mySidenav").style.width = "400px";
+		    document.getElementById("main").style.marginLeft = "400px";
 		}
 
 		/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */

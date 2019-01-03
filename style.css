@@ -7,12 +7,22 @@ body{
 
 
 	}
+#slika{
+	background: linear-gradient(rgba(0,0,0, 0.3), rgba(0,0,0,0.3)),url('sarajevo2.jpg');
+	height:100vh;
+	width: 100%;
+	margin:auto;
+	background-position: center;
+	display: table;
+	top:0;
+	background-size: cover;
+}
 
 	li{
 		float: left;
 		display: inline;
 		margin: 0 5px 0 5px;
-		border-left: 1px solid #8728C7;
+		border-left: 1px solid #F76201;
 		padding-left: 5px;
 	}
 
@@ -31,31 +41,31 @@ body{
 	}
 	nav a:hover{
 	
-		border-bottom: 1px solid #8728C7;
+		border-bottom: 1px solid #F76201;
 		padding-bottom: 5px;
 
 	}
 
 
 	.current a{
-	color:#8728C7;
+	color:#F76201;
 	font-weight: bold;
 	}
 	#tekst{
-		color: #8728C7;
+		color: #F76201;
 		text-align: center;
-		font-size: 40px;
+		font-size: 35px;
 		position: absolute;
 		left: 30%;
-		top:120%;
+		top:115%;
 		font-weight: bold;
 		font-family: "Oswald", sans-serif;
 
 	}
 	#krug{
-		height: 185px;
-		width: 185px;
-		background-color: #000;
+		height: 130px;
+		width: 130px;
+		background-color: #fff;
 		border-radius: 50%;
 		position: absolute;
 		top: 6px;
@@ -63,6 +73,18 @@ body{
 		
 		
 	}
+
+	#cont{
+		background: -webkit-linear-gradient(left top,  #F76201 0%, #fff 100%);
+		width: 140px;
+		height: 141px;
+		border-radius: 50%;
+		top: 60px;
+		right: 30px;
+		position: absolute;
+		
+	}
+
 	#logo{
 		position: absolute;
 		top: 30%;
@@ -76,7 +98,8 @@ body{
     transform: rotate(-20deg) ;
     animation: mymove 2s ;
     position: relative;
-    top: 20px;
+    top: 30px;
+    left:10px;
     animation-delay: 2s;
 
 	}
@@ -84,8 +107,8 @@ body{
 	#ap2 {
     	position:relative;
     	animation: mymove 2.3s ;
-        left:-25px;
-        top: 19px;
+        left:-9px;
+        top: 30px;
         animation-delay: 2s;
 
 	    
@@ -94,52 +117,44 @@ body{
 	#ap3 {
     transform: rotate(20deg);
     animation: mymove 2.4s ;
-    left:-45px;
+    left:-30px;
     position: relative;
-    top: 35px;
+    top: 43px;
     animation-delay: 2s;
     
 
 	}
 
-	#cont{
-		background: -webkit-linear-gradient(left top,  #730375 0%, #fff 100%);
-		width: 190px;
-		height: 191px;
-		border-radius: 50%;
-		top: 60px;
-		right: 30px;
-		position: absolute;
-		
-	}
 
+	
 	@keyframes mymove {
-	    50% {transform: translateY(75px);}
+	    50% {transform: translateY(55px);}
 	}
 
 
 	.btn{
 	border-radius: 9px;
 	font-family: "Oswald", sans-serif;
-	color:#8728C7;
+	color:#fff;
 	font-size: 135%;
 	text-decoration: none;
 	padding: 10px 20px;
-	border:solid #8728C7 3px;
+	border:solid #fff 3px;
 	text-transform: uppercase;
+
 
 }
 
 	.btn:hover{
-	color:#fff;
-	border: solid #fff 3px;
+	color:#F76201;
+	border: solid #F76201 3px;
 }
 
 
 	#btn_meni{
 		position: absolute;
-		top: 90%;
-		right: 43%;
+		top: 80%;
+		right: 40%;
 }
 
 /*meni*/
@@ -150,45 +165,72 @@ body{
     z-index: 1; /* Stay on top */
     top: 0;
     left: 0;
-    background-color: #2B0437; /* Purple*/
+    background-color: #fff; opacity:0.8; /* Purple*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
     
 
 }
+.sidenav form #naslov{
+	padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #F76201;
+    display: block;
+    transition: 0.3s;
 
+}
 .sidenav form {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 20px;
+    color: #F76201;
     display: block;
     transition: 0.3s;
 }
-.sidenav a:hover{
-    color: #f1f1f1;
-    border-bottom: 4px solid #000;
-	padding-bottom: 5px;
-	
-	
+
+input[type=submit] {
+    padding:5px 35px; 
+    background:#425858; 
+    border:1px, solid, #F76201;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    font-size: 26px;
+    margin-left: 100px;
+    color: #fff;
+}
+
+input[type=submit]:hover{
+	padding:5px 35px; 
+    background:#F76201; 
+    border:1px, solid, #F76201;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    font-size: 26px;
+    margin-left: 100px;
+    color: #fff;
 }
 
 .sidenav .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 30px;
+    font-size: 36px;
     margin-left: 50px;
-    color: #fff;
+	text-decoration: none;
+	color: #F76201;
+
+    
 
 }
 
 .closebtn:hover{
 
 	border:none !important;
-    font-size: 36px;
-
+	font-size: 40px;
 }
 
 #main {
@@ -262,44 +304,39 @@ body{
 }
 
 .fa-facebook {
-  background: #2B0437;
+  background: #F76201;
   color: white;
 
 }
 
 .fa-twitter {
-  background: #2B0437;
+  background: #F76201;
   color: white;
 }
 
 .fa-google {
-  background: #2B0437;
+  background: #F76201;
   color: white;
 }
 
 .fa-linkedin {
-  background: #2B0437;
+  background: #F76201;
   color: white;
 }
 
 .fa-youtube {
-  background: #2B0437;
+  background: #F76201;
   color: white;
 }
 
 .fa-pinterest {
-  background: #2B0437;
+  background: #F76201;
   color: white;
 }
 
-input[type=submit] {
-    padding:5px 15px; 
-    background:#fff; 
-    border:0 none;
-    cursor:pointer;
-    -webkit-border-radius: 5px;
-    border-radius: 5px; 
-}
+
+
+
 
 
 
@@ -348,8 +385,8 @@ input[type=submit] {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #2B0437;
-    min-width: 130px;
+    background-color: #425858;
+    min-width: 120px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
     z-index: 1;
     opacity: 0.8;
@@ -368,7 +405,7 @@ input[type=submit] {
 
 .dropdown-content a:hover {
 	opacity: 1;
-    background-color: #730375;
+    background-color: #F76201;
     color:#fff;
     font-weight: bold;
 
