@@ -1,21 +1,16 @@
 body{
 		margin: 0;
 		padding: 0;
-ok
 background: #000;
 		font-family: "Oswald", sans-serif;
 
 
 
 	}
-<<<<<<< HEAD
+
 	
 	#slika{
 	background: linear-gradient(rgba(0,0,0, 0.3), rgba(0,0,0,0.3)),url('sarajevo2.jpg');
-=======
-#slika{
-	background: linear-gradient(rgba(0,0,0, 0.3), rgba(0,0,0,0.3)),url('Sarajevo2.jpg');
->>>>>>> 20629dfb8cee992dce87a2ef22a23eda42e04eef
 	height:100vh;
 	width: 100%;
 	margin:auto;
