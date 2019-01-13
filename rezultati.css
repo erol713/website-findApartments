@@ -1,0 +1,103 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: #000;
+	font-family: "Oswald", sans-serif;
+	color: #fff;
+
+	}
+	#slika{
+    background-color: #425858;  
+	width: 100%;
+	margin:auto;
+	background-position: center;
+	display: table;
+	top:0;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+	
+	#tekst{
+		color: #F76201;
+		text-align: center;
+		font-size: 35px;
+		position: absolute;
+		left: 30%;
+		top:115%;
+		font-weight: bold;
+		font-family: "Oswald", sans-serif;
+
+	}
+	#krug{
+		height: 130px;
+		width: 130px;
+		background-color: #fff;
+		border-radius: 50%;
+		position: absolute;
+		top: 6px;
+		left: 8px;
+		
+		
+	}
+
+	#cont{
+		background: -webkit-linear-gradient(left top,  #F76201 0%, #fff 100%);
+		width: 140px;
+		height: 141px;
+		border-radius: 50%;
+		top: 60px;
+		right: 30px;
+		position: absolute;
+		
+	}
+
+	#logo{
+		top: 5%;
+		right: 85%;
+		position: fixed;
+		
+
+
+	}
+
+	#ap1 {
+    transform: rotate(-20deg) ;
+    animation: mymove 2s ;
+    position: relative;
+    top: 30px;
+    left:10px;
+    animation-delay: 2s;
+
+	}
+
+	#ap2 {
+    	position:relative;
+    	animation: mymove 2.3s ;
+        left:-9px;
+        top: 30px;
+        animation-delay: 2s;
+
+	    
+	}
+
+	#ap3 {
+    transform: rotate(20deg);
+    animation: mymove 2.4s ;
+    left:-30px;
+    position: relative;
+    top: 43px;
+    animation-delay: 2s;
+    
+
+	}
+
+
+	
+	@keyframes mymove {
+	    50% {transform: translateY(55px);}
+	}
+
+
+	a{
+		color: #F76201;
+	}
